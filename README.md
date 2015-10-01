@@ -4,7 +4,7 @@ This repository has tutorials that teach basic [Docker](https://www.docker.com/)
 
 # Tutorial 1: Running an ad-hoc container (2 minutes)
 
-This tutorial dynamically loads our python code into a _container volume_, then runs it.
+This tutorial dynamically loads our python code into a container's [data volume](https://docs.docker.com/userguide/dockervolumes/#data-volumes), then runs it.
 After the container runs, it will immediately exit and disappear. This approach is good
 for quick testing, but does not produce reusable images complete with our application code & configuration.
 
