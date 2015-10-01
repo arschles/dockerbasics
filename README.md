@@ -1,6 +1,6 @@
 # dockerbasics
 
-Training code for basic docker operations
+This repository has tutorials that teach basic [Docker](https://www.docker.com/) operations.
 
 # Tutorial 1: Running an ad-hoc container (2 minutes)
 
