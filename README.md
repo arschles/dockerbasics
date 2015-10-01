@@ -25,8 +25,9 @@ will be in the `/dir` directory inside the container
 
 # Tutorial 2: Creating and image and running a container (5 minutes)
 
-This tutorial creates an image with our code and configuration, then runs the image in a container.
-This approach is good for packaging up your _entire_ application for distributing it to run.
+This tutorial creates an image with our code (the same as in tutorial 2) and configuration,
+then runs the image in a container. This approach is good for packaging up your _entire_
+application for distributing it to run.
 
 Use the following command to create your image:
 
