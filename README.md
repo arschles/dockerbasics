@@ -16,12 +16,12 @@ docker run -v $PWD:/dir -w /dir python:3.5.0-slim python sample.py
 
 Explanation of command line flags:
 
-- `-v $PWD:/dir` - allows the container to see everything in the current working directory (`$PWD`). The contents
+- `-v $PWD:/dir`: allows the container to see everything in the current working directory (`$PWD`). The contents
 will be in the `/dir` directory inside the container
-- `-w /dir` - sets the container's current working directory to `/dir`
-- `python:3.5.0-slim` - tells the Docker daemon to run all of the following arguments as commands inside of the
+- `-w /dir`: sets the container's current working directory to `/dir`
+- `python:3.5.0-slim`: tells the Docker daemon to run all of the following arguments as commands inside of the
 [python image with the 3.5.0 tag](https://hub.docker.com/r/library/python/tags/)
-- `python sample.py` - the command to run inside the container
+- `python sample.py`: the command to run inside the container
 
 # Tutorial 2: Creating and image and running a container (5 minutes)
 
@@ -42,9 +42,9 @@ that Python code (config).
 
 Explanation of command line flags:
 
-- `-t` use the following value to set the name and tag of the image
-- `dockerbasics/testpy:0.1` - the name (`dockerbasics/testpy`) and tag (`0.1`) of the image
-- `.` - where to find the Dockerfile, which is the template for how to build the image
+- `-t`: use the following value to set the name and tag of the image
+- `dockerbasics/testpy:0.1`: the name (`dockerbasics/testpy`) and tag (`0.1`) of the image
+- `.`: where to find the Dockerfile, which is the template for how to build the image (see the file itself for explanation)
 
 ## Run the image in a container
 Use the following command to run your image inside a container:
@@ -55,5 +55,5 @@ docker run --rm dockerbasics/testpy:0.1
 
 Explanation of command line flags:
 
-- `--rm` - remove all container data (e.g. logs, auditing data) after execution finishes
-- `dockerbasics/testpy:0.1` - the image to run
+- `--rm`: remove all container data (e.g. logs, auditing data) after execution finishes
+- `dockerbasics/testpy:0.1`: the image to run
