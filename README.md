@@ -29,6 +29,7 @@ This tutorial creates an image with our code (the same as in tutorial 2) and con
 then runs the image in a container. This approach is good for packaging up your _entire_
 application for distributing it to run.
 
+## Building the image
 Use the following command to create your image:
 
 ```sh
@@ -45,6 +46,7 @@ Explanation of command line flags:
 - `dockerbasics/testpy:0.1` - the name (`dockerbasics/testpy`) and tag (`0.1`) of the image
 - `.` - where to find the Dockerfile, which is the template for how to build the image
 
+## Run the image in a container
 Use the following command to run your image inside a container:
 
 ```sh
