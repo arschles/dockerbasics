@@ -39,8 +39,19 @@ At this point, you have built an image (`dockerbasics/testpy:0.1`) that is store
 to be executed in a container. The image contains the Python code (your application) and the command necessary to run
 that Python code (config).
 
+Explanation of command line flags:
+
+- `-t` use the following value to set the name and tag of the image
+- `dockerbasics/testpy:0.1` - the name (`dockerbasics/testpy`) and tag (`0.1`) of the image
+- `.` - where to find the Dockerfile, which is the template for how to build the image
+
 Use the following command to run your image inside a container:
 
 ```sh
 docker run --rm dockerbasics/testpy:0.1
 ```
+
+Explanation of command line flags:
+
+- `--rm` - remove all container data (e.g. logs, auditing data) after execution finishes
+- `dockerbasics/testpy:0.1` - the image to run
