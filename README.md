@@ -11,7 +11,7 @@ for quick testing, but does not produce reusable images complete with our applic
 Use the following command to run the python code:
 
 ```sh
-docker run --rm --net=host -v $PWD:/dir -w /dir python:3.5.0-slim python sample.py
+docker run --rm --net=host -v $PWD:/dir -w /dir python:3.5.0 python sample.py
 ```
 
 Explanation of command line flags:
@@ -21,7 +21,7 @@ Explanation of command line flags:
 - `-v $PWD:/dir` - allows the container to see everything in the current working directory (`$PWD`). The contents
 will be in the `/dir` directory inside the container
 - `-w /dir` - sets the container's current working directory to `/dir`
-- `python:3.5.0-slim` - tells the Docker daemon to run all of the following arguments as commands inside of the
+- `python:3.5.0` - tells the Docker daemon to run all of the following arguments as commands inside of the
 [python image with the 3.5.0 tag](https://hub.docker.com/r/library/python/tags/)
 - `python sample.py` - the command to run inside the container
 
