@@ -1,7 +1,7 @@
 # this file is the template from which to create our own production-ready image
 
-# the image to base this one on
-FROM python:3.5.0-slim
+# the image on which to base this one
+FROM python:3.5.0
 
 # creates a directory inside the image
 RUN mkdir /py
