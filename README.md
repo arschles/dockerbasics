@@ -11,11 +11,13 @@ for quick testing, but does not produce reusable images complete with our applic
 Use the following command to run the python code:
 
 ```sh
-docker run -v $PWD:/dir -w /dir python:3.5.0-slim python sample.py
+docker run --rm --net=host -v $PWD:/dir -w /dir python:3.5.0-slim python sample.py
 ```
 
 Explanation of command line flags:
 
+- `--rm` - remove all container data (e.g. logs, auditing data) after execution finishes
+- `--net=host` - use the host's network stack instead of a dedicated stack for the container
 - `-v $PWD:/dir` - allows the container to see everything in the current working directory (`$PWD`). The contents
 will be in the `/dir` directory inside the container
 - `-w /dir` - sets the container's current working directory to `/dir`
@@ -50,10 +52,11 @@ Explanation of command line flags:
 Use the following command to run your image inside a container:
 
 ```sh
-docker run --rm dockerbasics/testpy:0.1
+docker run --rm --net=host dockerbasics/testpy:0.1
 ```
 
 Explanation of command line flags:
 
 - `--rm` - remove all container data (e.g. logs, auditing data) after execution finishes
+- `--net=host` - use the host's network stack instead of a dedicated stack for the container
 - `dockerbasics/testpy:0.1` - the image to run
